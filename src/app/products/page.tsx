@@ -2,6 +2,8 @@ import ProductCard from "@/src/components/product/ProductCard";
 import { getAllProducts } from "@/src/lib/fetchProduct/fetch-product";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
     const products = await getAllProducts();
     console.log(products)

@@ -1,6 +1,8 @@
 import ProductDetail from "@/src/components/product/ProductDetail";
 import { getProductById } from "@/src/lib/fetchProduct/fetch-product";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProductDetailPage({
     params,
 }: {
@@ -8,7 +10,7 @@ export default async function ProductDetailPage({
 }) {
     const { id } = await params;
     const product = await getProductById(id);
-    console.log(product)
+    console.log(product);
 
     return (
         <div>
