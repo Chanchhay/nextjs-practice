@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import ProductDetail from "@/src/components/product/ProductDetail";
 import { Product } from "@/src/lib/product/product-type";
 
