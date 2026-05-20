@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default async function Page() {
     const products = await getAllProducts();
+    console.log(products)
 
     return (
         <div className="grid grid-cols-4">
