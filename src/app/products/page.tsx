@@ -12,7 +12,7 @@ export default async function Page() {
         <div className="grid grid-cols-4">
             {products.map((pro, index) => (
                 <div key={index}>
-                    <Link href={`/products/${pro.id}`}>
+                    <Link href={`products/${pro.id}`}>
                         <ProductCard props={pro} />
                     </Link>
                 </div>
