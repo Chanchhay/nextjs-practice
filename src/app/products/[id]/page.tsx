@@ -11,6 +11,8 @@ export default async function ProductDetailPage({
     console.log(id);
     const data = await fetch(`${API}/products/${id}`);
 
+    if (!data.ok) return <h1>failed to get product</h1>;
+
     const product: Product = await data.json();
     return (
         <div>

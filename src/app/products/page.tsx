@@ -6,6 +6,8 @@ export default async function Page() {
     const API = process.env.NEXT_PUBLIC_URL;
     const data = await fetch(`${API}/products`);
 
+    if (!data.ok) return <h1>failed to get products</h1>;
+
     const products: Product[] = await data.json();
 
     return (
