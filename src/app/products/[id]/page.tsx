@@ -1,8 +1,6 @@
 import ProductDetail from "@/src/components/product/ProductDetail";
 import { getProductById } from "@/src/lib/fetchProduct/fetch-product";
 
-export const dynamic = "force-dynamic";
-
 export default async function ProductDetailPage({
     params,
 }: {
